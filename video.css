@@ -1,0 +1,13 @@
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.table-container {
+    flex: 1;
+    padding-right: 30px; /* Aby zapewnić trochę przestrzeni między tabelą a filmem */
+}
+
+.video-container {
+    flex: 1;
+}

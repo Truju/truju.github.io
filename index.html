@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peloria Sleeper</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tło.css">
+    <style>
+        .content {
+            display: flex;
+            justify-content: space-between;
+        }
+        .table-container {
+            flex: 1;
+            padding-right: 20px; /* Aby zapewnić trochę przestrzeni między tabelą a filmem */
+        }
+        .video-container {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Peloria Sleepers</h1>
+    <div class="content">
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Rank</th>
+                        <th>Level</th>
+                        <th>Vocation</th>
+                        <th>EXP</th> <!-- Nowa kolumna EXP -->
+                    </tr>
+                </thead>
+                <tbody id="highscoresBody">
+                    <!-- Dane postaci zostaną wstawione tutaj -->
+                </tbody>
+            </table>
+        </div>
+        <div class="video-container">
+            <iframe width="850" height="500" src="https://www.youtube.com/embed/kTj-j32xRig" title="Sleepers Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div id="zegar" style="font-size:24px;"></div>
+    <script src="zegar.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

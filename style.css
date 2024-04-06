@@ -1,0 +1,30 @@
+/* Stylizacja nagłówka strony */
+h1 {
+    color: #ffffff; /* Biały tekst */
+    background-color: #004578; /* Ciemnoniebieskie tło */
+    padding: 10px;
+    text-align: center;
+}
+
+/* Stylizacja nagłówków tabeli */
+th {
+    background-color: #004578; /* Ciemnoniebieskie tło */
+    color: #ffffff; /* Biały tekst */
+    padding: 10px;
+    border: 1px solid #ffffff; /* Biała ramka */
+}
+
+/* Stylizacja wierszy tabeli z danymi graczy */
+tr {
+    background-color: #ff0000; /* Czerwone tło */
+}
+
+td {
+    padding: 8px; /* Odstęp wewnątrz komórek */
+    border: 1px solid #dddddd; /* Szara ramka dla komórek */
+}
+
+/* Alternatywny kolor tła dla parzystych wierszy tabeli z danymi graczy */
+tr:nth-child(even) {
+    background-color: #ffcccc; /* Jaśniejszy czerwony dla lepszego kontrastu */
+}
