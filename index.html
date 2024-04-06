@@ -15,9 +15,6 @@
             flex: 1;
             padding-right: 20px; /* Aby zapewnić trochę przestrzeni między tabelą a filmem */
         }
-        .video-container {
-            flex: 1;
-        }
     </style>
 </head>
 <body>
@@ -27,11 +24,12 @@
             <table>
                 <thead>
                     <tr>
+                        <th>N</th>
                         <th>Name</th>
                         <th>Rank</th>
                         <th>Level</th>
                         <th>Vocation</th>
-                        <th>EXP</th> <!-- Nowa kolumna EXP -->
+                        <th>EXP</th>
                     </tr>
                 </thead>
                 <tbody id="highscoresBody">
@@ -39,12 +37,11 @@
                 </tbody>
             </table>
         </div>
-        <div class="video-container">
-            <iframe width="850" height="500" src="https://www.youtube.com/embed/kTj-j32xRig" title="Sleepers Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+        <!-- Miejsce na wideo zostanie dodane tutaj dynamicznie przez JavaScript -->
     </div>
     <div id="zegar" style="font-size:24px;"></div>
     <script src="zegar.js"></script>
     <script src="script.js"></script>
+    <script src="video.js"></script>
 </body>
 </html>

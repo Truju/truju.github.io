@@ -22,9 +22,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 function ustawStylZegara() {
     var zegarDiv = document.getElementById('zegar');
-    zegarDiv.style.position = 'fixed';
-    zegarDiv.style.top = '10px';
-    zegarDiv.style.right = '10px';
+    zegarDiv.style.position = 'absolute';
+    zegarDiv.style.top = '27px';
+    zegarDiv.style.right = '15px';
     zegarDiv.style.padding = '10px';
     zegarDiv.style.backgroundColor = '#333';
     zegarDiv.style.color = 'white';

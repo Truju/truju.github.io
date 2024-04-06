@@ -8,7 +8,7 @@ h1 {
 
 /* Stylizacja nagłówków tabeli */
 th {
-    background-color: #004578; /* Ciemnoniebieskie tło */
+    background-color: #1b8f16; /* Ciemnoniebieskie tło */
     color: #ffffff; /* Biały tekst */
     padding: 10px;
     border: 1px solid #ffffff; /* Biała ramka */
@@ -16,7 +16,7 @@ th {
 
 /* Stylizacja wierszy tabeli z danymi graczy */
 tr {
-    background-color: #ff0000; /* Czerwone tło */
+    background-color: #09ff00; /* Czerwone tło */
 }
 
 td {
@@ -26,5 +26,5 @@ td {
 
 /* Alternatywny kolor tła dla parzystych wierszy tabeli z danymi graczy */
 tr:nth-child(even) {
-    background-color: #ffcccc; /* Jaśniejszy czerwony dla lepszego kontrastu */
+    background-color: #d0f600; /* Jaśniejszy czerwony dla lepszego kontrastu */
 }

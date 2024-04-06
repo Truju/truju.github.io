@@ -20,10 +20,11 @@ function displayGuildMembersOnline(members) {
     const tableBody = document.getElementById('highscoresBody');
     tableBody.innerHTML = ''; // Clear existing data
 
-    members.filter(member => member.status === 'online').forEach(member => {
+    members.filter(member => member.status === 'online').forEach((member, index) => {
         const expForCurrentLevel = calculateExpForLevel(member.level);
         const row = document.createElement('tr');
         row.innerHTML = `
+            <td>#${index + 1}.</td> <!-- Dodano numer porządkowy -->
             <td>${member.name}</td>
             <td>${member.rank}</td>
             <td>${member.level}</td>
