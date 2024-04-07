@@ -1,0 +1,29 @@
+/* Plik buttons.css */
+.switch-buttons {
+    display: block; /* Ustawienie typu wyświetlania na blokowe */
+    width: 100%; /* Ustawienie szerokości na 100% dostępnej przestrzeni */
+    text-align: left; /* Wyrównanie tekstu do lewej strony */
+    margin: 20px 0; /* Marginesy górny i dolny */
+}
+
+.switch-buttons button {
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 10px 0 0; /* Zmodyfikowany margines, aby oddzielić przyciski tylko po prawej stronie */
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    outline: none;
+}
+
+.switch-buttons button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+.switch-buttons button:active {
+    transform: scale(0.95);
+}

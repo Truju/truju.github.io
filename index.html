@@ -6,19 +6,28 @@
     <title>Peloria Sleeper</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="tło.css">
+    <link rel="stylesheet" href="buttons.css">
     <style>
         .content {
             display: flex;
             justify-content: space-between;
         }
-        .table-container {
+        .table-container, .video-container {
             flex: 1;
-            padding-right: 20px; /* Aby zapewnić trochę przestrzeni między tabelą a filmem */
+            padding-right: 20px; /* Aby zapewnić trochę przestrzeni między tabelą a miejscem na wideo */
+        }
+        /* Styl dla przycisków przełączających */
+        .switch-buttons {
+            margin: 10px 0;
         }
     </style>
 </head>
 <body>
     <h1>Peloria Sleepers</h1>
+    <div class="switch-buttons">
+        <button id="showOnline">Online</button>
+        <button id="showAll">All Sleepers</button>
+    </div>
     <div class="content">
         <div class="table-container">
             <table>
@@ -33,15 +42,17 @@
                     </tr>
                 </thead>
                 <tbody id="highscoresBody">
-                    <!-- Dane postaci zostaną wstawione tutaj -->
+                    <!-- Dane postaci zostaną wstawione tutaj przez JavaScript -->
                 </tbody>
             </table>
         </div>
-        <!-- Miejsce na wideo zostanie dodane tutaj dynamicznie przez JavaScript -->
+        <div id="videoContainer" class="video-container">
+            <!-- Miejsce na wideo zostanie dodane tutaj dynamicznie przez JavaScript -->
+        </div>
     </div>
     <div id="zegar" style="font-size:24px;"></div>
     <script src="zegar.js"></script>
     <script src="script.js"></script>
-    <script src="video.js"></script>
+    <script src="video.js"></script> <!-- Załóżmy, że video.js zawiera logikę dodawania wideo -->
 </body>
 </html>
