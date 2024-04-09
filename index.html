@@ -6,7 +6,7 @@
     <title>Peloria Sleeper</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="tło.css">
-    <link rel="stylesheet" href="buttons.css">
+    <link rel="stylesheet" href="buttons.css"> 
     <style>
         .content {
             display: flex;
@@ -14,20 +14,43 @@
         }
         .table-container, .video-container {
             flex: 1;
-            padding-right: 20px; /* Aby zapewnić trochę przestrzeni między tabelą a miejscem na wideo */
+            padding-right: 20px; /* Aby zapewnić trochę przestrzeni między tabelami */
         }
         /* Styl dla przycisków przełączających */
         .switch-buttons {
             margin: 10px 0;
+            display: flex;
+            justify-content: flex-start;
+            gap: 10px; /* Dodaje odstęp między przyciskami */
+        }
+        .guild-switcher {
+            margin-bottom: 20px; /* Dodaje odstęp pod przyciskami przełączania gildii */
+        }
+        /* Styl dla aktywnego przycisku gildii */
+        .active-guild {
+            background-color: #f0f0f0; /* Przykładowy styl dla aktywnego przycisku */
         }
     </style>
 </head>
 <body>
     <h1>Peloria Sleepers</h1>
-    <div class="switch-buttons">
-        <button id="showOnline">Online</button>
-        <button id="showAll">All Sleepers</button>
+<div class="guild-switcher">
+    <button id="showSleepers" class="active-guild button-common">Sleepers Guild</button>
+    <button id="showReapers" class="button-common">Reapers Guild</button>
+</div>
+<div class="switch-buttons">
+    <button id="showOnline" class="button-common">Online</button>
+    <button id="showAll" class="button-common">All Members</button>
+</div>
+<!-- Tu będzie kontener na tabelę gildii -->
+<div id="guildsContainer">
+    <div id="guild1" class="guild">
+        <!-- Tabela dla gildii Sleepers zostanie tutaj dodana -->
     </div>
+    <div id="guild2" class="guild">
+        <!-- Tabela dla gildii Reapers zostanie tutaj dodana -->
+    </div>
+</div>
     <div class="content">
         <div class="table-container">
             <table>
@@ -35,24 +58,35 @@
                     <tr>
                         <th>N</th>
                         <th>Name</th>
-                        <th>Rank</th>
                         <th>Level</th>
                         <th>Vocation</th>
                         <th>EXP</th>
                     </tr>
                 </thead>
                 <tbody id="highscoresBody">
-                    <!-- Dane postaci zostaną wstawione tutaj przez JavaScript -->
+                    <!-- Dane pierwszej gildii zostaną wstawione tutaj przez JavaScript -->
                 </tbody>
             </table>
         </div>
-        <div id="videoContainer" class="video-container">
-            <!-- Miejsce na wideo zostanie dodane tutaj dynamicznie przez JavaScript -->
+        <div class="table-container" style="display:none"> <!-- Początkowo ukryta -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>N</th>
+                        <th>Name</th>
+                        <th>Level</th>
+                        <th>Vocation</th>
+                        <th>EXP</th>
+                    </tr>
+                </thead>
+                <tbody id="reapersBody">
+                    <!-- Dane drugiej gildii zostaną wstawione tutaj przez JavaScript -->
+                </tbody>
+            </table>
         </div>
     </div>
     <div id="zegar" style="font-size:24px;"></div>
     <script src="zegar.js"></script>
     <script src="script.js"></script>
-    <script src="video.js"></script> <!-- Załóżmy, że video.js zawiera logikę dodawania wideo -->
 </body>
 </html>

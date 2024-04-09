@@ -1,17 +1,10 @@
-/* Plik buttons.css */
-.switch-buttons {
-    display: block; /* Ustawienie typu wyświetlania na blokowe */
-    width: 100%; /* Ustawienie szerokości na 100% dostępnej przestrzeni */
-    text-align: left; /* Wyrównanie tekstu do lewej strony */
-    margin: 20px 0; /* Marginesy górny i dolny */
-}
-
-.switch-buttons button {
-    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+/* WspÃ³lny styl dla wszystkich przyciskÃ³w */
+.button-common {
+    background-image: linear-gradient(to right, #cb1111 0%, #432929 100%);
     border: none;
     color: white;
     padding: 10px 20px;
-    margin: 0 10px 0 0; /* Zmodyfikowany margines, aby oddzielić przyciski tylko po prawej stronie */
+    margin: 0 10px 10px 0;
     border-radius: 20px;
     cursor: pointer;
     font-size: 16px;
@@ -19,11 +12,15 @@
     outline: none;
 }
 
-.switch-buttons button:hover {
+.button-common:hover {
     transform: scale(1.05);
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
 }
 
-.switch-buttons button:active {
+.button-common:active {
     transform: scale(0.95);
 }
+
+/* Oznaczenie aktywnego przycisku dla gildii */
+.active-guild {
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.
